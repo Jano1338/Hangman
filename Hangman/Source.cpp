@@ -7,7 +7,7 @@ using namespace std;
 int NUM_TRY = 4;
 int checkGuess(char, string, string&);
 void main_menu();
-string message = "Hrat!";
+string message = "Hraj!";
 
 
 int main(int argc, char* argv[])
@@ -106,26 +106,11 @@ void main_menu()
 {
 	system("color 02 ");
 	system("cls");
-	cout << "\t\t\t\t*\t*";
-
-	cout << "\t\t\t\t**\t**";
-	cout << "\t\t\t\t***\t***";
-	cout << "\t\t\t\t****\t****";
-	cout << "\t\t\t\t*****\t*****";
-	cout << "\t\t\t\t******\t******";
-	cout << "\t\t\t\t*******\t*******";
-	cout << "\t\t\t\t*******\t*******";
-	cout << "\t\t\t\t******\t******";
-	cout << "\t\t\t\t*****\t*****";
-	cout << "\t\t\t\t****\t****";
-	cout << "\t\t\t\t***\t***";
-	cout << "\t\t\t\t**\t**";
-	cout << "\t\t\t\t*\t*";
-
+	
 	
 	cout << "\n\t\t\t\tObesenec!";
 	cout << "\n\t\tMas este " << NUM_TRY << " pokusi. Hadaj nazvi mesiacov.";
 	cout << "\n\n\t\t\t\t" + message;
-	cout << "\n\t\t@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n";
+	
 
 }
