@@ -74,7 +74,7 @@ int main(int argc, char* argv[])
 	{
 		message = "Prehral si.";
 		main_menu();
-		cout << "\n\t\t\t\tMesiac bol : " << month << endl;
+		cout << "\n\t\t\tMesiac bol : " << month << endl;
 	}
 	cin.ignore();
 	cin.get();
@@ -82,20 +82,20 @@ int main(int argc, char* argv[])
 }
 
 
-int checkGuess(char guess, string secretmonth, string& guessmonth)
+int checkGuess(char hadaj, string tajnymesiac, string& hadajmesiac)
 {
 	int i;
 	int matches = 0;
-	int len = secretmonth.length();
+	int len = tajnymesiac.length();
 	for (i = 0; i < len; i++)
 	{
 
-		if (guess == guessmonth[i])
+		if (hadaj == hadajmesiac[i])
 			return 0;
 
-		if (guess == secretmonth[i])
+		if (hadaj == tajnymesiac[i])
 		{
-			guessmonth[i] = guess;
+			hadajmesiac[i] = hadaj;
 			matches++;
 		}
 	}
